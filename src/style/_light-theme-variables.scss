@@ -1,0 +1,27 @@
+/* Basically this is a duplication of the dark version of this file. It's implemented in this way for the practicing */
+
+$-bg-c: #ffffe0;
+$-font-c: #480947;
+$-btn-c: #ff4400;
+
+@mixin configure($bg-c: null, $font-c: null, $btn-c: null) {
+  @if $bg-c {
+    $-bg-c: $bg-c !global;
+  }
+
+  @if $font-c {
+    $-font-c: $font-c !global;
+  }
+
+  @if $btn-c {
+    $-btn-c: $btn-c !global;
+  }
+}
+
+@mixin colors {
+  :root {
+    --background-color--light: #{$-bg-c};
+    --font-color--light: #{$-font-c};
+    --button-color--light: #{$-btn-c};
+  }
+}

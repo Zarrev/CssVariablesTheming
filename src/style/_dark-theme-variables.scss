@@ -1,0 +1,26 @@
+
+$-bg-c: #000000;
+$-font-c: #ffffe0;
+$-btn-c: #05861e;
+
+@mixin configure($bg-c: null, $font-c: null, $btn-c: null) {
+  @if $bg-c {
+    $-bg-c: $bg-c !global;
+  }
+
+  @if $font-c {
+    $-font-c: $font-c !global;
+  }
+
+  @if $btn-c {
+    $-btn-c: $btn-c !global;
+  }
+}
+
+@mixin colors {
+  :root {
+    --background-color--dark: #{$-bg-c};
+    --font-color--dark: #{$-font-c};
+    --button-color--dark: #{$-btn-c};
+  }
+}

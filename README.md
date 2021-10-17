@@ -1,6 +1,8 @@
 # CssVariablesTheming
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+This project has made for to present the CSS variable theming usage in an Angular application.
+However, this is a test for the SCSS Modules as well.
 
 ## Development server
 

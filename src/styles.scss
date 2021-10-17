@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'style/generic-variables';
+@use 'style/dark-theme-variables' as d;
+@use 'style/light-theme-variables' as l;
+
+@include generic-variables.colors;
+
+@include d.configure(#2C2A2AFF);
+@include d.colors;
+
+@include l.colors;
+
+:root {
+  --page--background-color: var(--background-color--light);
+  --page--font-color: var(--font-color--light);
+  --page--button-color: var(--button-color--light);
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--page--background-color);
+}

@@ -1,0 +1,24 @@
+.app-component {
+
+  $border: solid 1px black;
+
+  header {
+    border: $border;
+  }
+
+  color: var(--page--font-color);
+
+  main {
+    section {
+      font-size: var(--font-size-md);
+    }
+
+    .btn {
+      background-color: var(--page--button-color);
+    }
+  }
+
+  footer {
+    border-top: $border;
+  }
+}
